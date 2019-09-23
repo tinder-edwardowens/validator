@@ -1,4 +1,4 @@
-module github.com/eddieowens/validator
+module github.com/tinder-edwardowens/validator
 
 go 1.13
 

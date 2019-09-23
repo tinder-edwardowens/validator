@@ -48,7 +48,7 @@ func (v *Validator) SetFieldTagValidator(tag string, validation FieldValidation)
 
 func (v *Validator) Struct(s interface{}) error {
 	v.tagErrorMap = map[string]error{}
-	err := v.Struct(s)
+	err := v.Validate.Struct(s)
 	if err != nil {
 		vErrs := err.(validator.ValidationErrors)
 		result := make(ValidationErrors, len(vErrs))
